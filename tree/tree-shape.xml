@@ -1,0 +1,52 @@
+<scene version="2.1.0">
+
+    <!-- Materials -->
+    <bsdf type="twosided" id="mat-green" name="mat-green">
+        <bsdf type="principled" name="bsdf">
+            <rgb value="0.001 0.5 0.001" name="base_color"/>
+            <float name="spec_tint" value="0.000000"/>
+            <float name="spec_trans" value="0.000000"/>
+            <float name="metallic" value="0.000000"/>
+            <float name="anisotropic" value="0.000000"/>
+            <float name="roughness" value="0.27778"/>
+            <float name="sheen" value="0.000000"/>
+            <float name="sheen_tint" value="0.500000"/>
+            <float name="clearcoat" value="0.000000"/>
+            <float name="clearcoat_gloss" value="0.000900"/>
+            <float name="specular" value="1.00000"/>
+        </bsdf>
+    </bsdf>
+
+    <bsdf type="twosided" id="mat-brown" name="mat-brown">
+        <bsdf type="principled" name="bsdf">
+            <rgb value="0.36 0.25 0.2" name="base_color"/>
+            <float name="spec_tint" value="0.000000"/>
+            <float name="spec_trans" value="0.000000"/>
+            <float name="metallic" value="0.000000"/>
+            <float name="anisotropic" value="0.000000"/>
+            <float name="roughness" value="0.27778"/>
+            <float name="sheen" value="0.000000"/>
+            <float name="sheen_tint" value="0.500000"/>
+            <float name="clearcoat" value="0.000000"/>
+            <float name="clearcoat_gloss" value="0.000900"/>
+            <float name="specular" value="1.00000"/>
+        </bsdf>
+    </bsdf>
+
+    <!-- BSDF
+    <bsdf type="twosided" id="pink-bsdf">
+		<bsdf type="diffuse">
+			<rgb name="reflectance" value="0.8, 0.2, 0.2"/>
+		</bsdf>
+	</bsdf>
+-->
+    <!-- SHAPES -->
+    <shape type="obj">
+        <string name="filename" value="./data/tree/treetest.obj"/>
+        <transform name="to_world">
+            <translate x="0.5" y="0.5" z="0.5"/>
+        </transform>
+        <ref id="mat-green" name="bsdf"/>
+    </shape>
+
+</scene>
